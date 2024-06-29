@@ -1,0 +1,35 @@
+{
+  "name": "@tactics/browser",
+  "version": "0.0.1",
+  "description": "Utilities to help ease use of the web browser in javascript",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./build/index.js",
+      "import": "./build/index.js",
+      "types": "./build/index.d.ts"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "format": "prettier --write src/.",
+    "build": "prettier --write src/. && ./node_modules/.bin/tsup"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^8.1.0"
+  },
+  "dependencies": {
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.2"
+  },
+  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a"
+}
