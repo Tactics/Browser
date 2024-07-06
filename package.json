@@ -1,6 +1,6 @@
 {
   "name": "@tactics/browser",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Utilities to help ease use of the web browser in javascript",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -28,6 +28,11 @@
     "@types/js-cookie": "^3.0.6",
     "@types/react": "^18.3.3",
     "tsup": "^8.1.0"
+  },
+  "peerDependencies": {
+    "match-operator": ">= 0.2",
+    "react": ">= 18",
+    "swiper": ">= 11.1"
   },
   "dependencies": {
     "@tactics/js-monad": "^0.0.1",

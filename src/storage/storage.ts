@@ -16,13 +16,6 @@ export function dispatchStorageEvent(
   );
 }
 
-export const useStorageSubscribe = (
-  callback: (event: StorageEvent) => void,
-) => {
-  window.addEventListener("storage", callback);
-  return () => window.removeEventListener("storage", callback);
-};
-
 export const getStorageServerSnapshot = () => {
   throw Error("this is a client-only hook");
 };
