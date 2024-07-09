@@ -11,6 +11,7 @@ import {
   removeStorageItem,
   setStorageItem,
 } from "@/storage/storage";
+import { useEventListener } from "@/hooks/use-event-listener";
 
 function deepEqual(obj1: any, obj2: any): boolean {
   return JSON.stringify(obj1) === JSON.stringify(obj2);

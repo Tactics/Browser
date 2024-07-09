@@ -2,7 +2,6 @@ export { useDebounce } from "@/hooks/use-debounce";
 export { useThrottle } from "@/hooks/use-trottle";
 export { useViewportSize } from "@/hooks/use-viewport-size";
 
-export { useKeyboardShortcuts } from "@/hooks/use-keyboard-shortcut";
 export { useMeasure } from "@/hooks/use-measure";
 export { useLongPress } from "@/hooks/use-long-press";
 export { useVisibilityChange } from "@/hooks/use-visibility-change";

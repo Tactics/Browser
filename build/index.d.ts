@@ -11,13 +11,6 @@ interface ViewportSize {
 }
 declare function useViewportSize(): ViewportSize;
 
-type ShortcutKeys = string[];
-interface ShortcutOptions {
-    overrideSystem?: boolean;
-    ignoreInputFields?: boolean;
-}
-declare function useKeyboardShortcuts(keys: ShortcutKeys, callback: (shortcutKeys: ShortcutKeys) => void, options: ShortcutOptions): void;
-
 declare function useMeasure(): [
     (node: Element) => void,
     {
@@ -132,4 +125,4 @@ declare class BrowserAccessibilityPreferences {
 
 declare const useBrowserAccessibilityPreferences: () => BrowserAccessibilityPreferences;
 
-export { BrowserAccessibilityPreferences, CookieStorage, type ScrollState, type ScrollToArgs, useAppleTouchFavicon, useBrowserAccessibilityPreferences, useCopyToClipboard, useDebounce, useDocumentTitle, useEventListener, useFavicon, useGeolocation, useHover, useIcoFavicon, useIdle, useKeyboardShortcuts, useLockBodyScroll, useLongPress, useMeasure, useMediaQuery, useOnScreen, usePrefersDarkMode, usePrefersHighContast, usePrefersLowContrast, usePrefersReducedMotion, usePrefersReducedTransparancy, useScript, useStorage, useSvgFavicon, useThrottle, useViewportSize, useVisibilityChange, useWindowScroll };
+export { BrowserAccessibilityPreferences, CookieStorage, type ScrollState, type ScrollToArgs, useAppleTouchFavicon, useBrowserAccessibilityPreferences, useCopyToClipboard, useDebounce, useDocumentTitle, useEventListener, useFavicon, useGeolocation, useHover, useIcoFavicon, useIdle, useLockBodyScroll, useLongPress, useMeasure, useMediaQuery, useOnScreen, usePrefersDarkMode, usePrefersHighContast, usePrefersLowContrast, usePrefersReducedMotion, usePrefersReducedTransparancy, useScript, useStorage, useSvgFavicon, useThrottle, useViewportSize, useVisibilityChange, useWindowScroll };
