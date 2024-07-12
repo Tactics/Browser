@@ -23,8 +23,8 @@ export function useViewportSize(): ViewportSize {
     setSize(); // Initial size on mount
   }, [setSize]);
 
-  useEventListener("resize", () => setSize, window);
-  useEventListener("orientationchange", () => setSize, window);
+  window.addEventListener("resize", setSize);
+  window.addEventListener("orientationchange", setSize);
 
   return windowSize;
 }
