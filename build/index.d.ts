@@ -47,6 +47,8 @@ declare class CookieStorage implements Storage {
 
 declare function useDocumentTitle(title: string): void;
 
+declare function useHtmlLang(lang: string): void;
+
 declare function useIcoFavicon(ico: string): void;
 
 declare function useSvgFavicon(svg: string | SVGElement): void;
@@ -122,4 +124,4 @@ declare class BrowserAccessibilityPreferences {
 
 declare const useBrowserAccessibilityPreferences: () => BrowserAccessibilityPreferences;
 
-export { BrowserAccessibilityPreferences, CookieStorage, type ScrollState, type ScrollToArgs, useAppleTouchFavicon, useBrowserAccessibilityPreferences, useCopyToClipboard, useDebounce, useDocumentTitle, useEventListener, useGeolocation, useHover, useIcoFavicon, useIdle, useLockBodyScroll, useLongPress, useMeasure, useMediaQuery, useOnScreen, usePrefersDarkMode, usePrefersHighContast, usePrefersLowContrast, usePrefersReducedMotion, usePrefersReducedTransparancy, useScript, useStorage, useSvgFavicon, useThrottle, useViewportSize, useVisibilityChange, useWindowScroll };
+export { BrowserAccessibilityPreferences, CookieStorage, type ScrollState, type ScrollToArgs, useAppleTouchFavicon, useBrowserAccessibilityPreferences, useCopyToClipboard, useDebounce, useDocumentTitle, useEventListener, useGeolocation, useHover, useHtmlLang, useIcoFavicon, useIdle, useLockBodyScroll, useLongPress, useMeasure, useMediaQuery, useOnScreen, usePrefersDarkMode, usePrefersHighContast, usePrefersLowContrast, usePrefersReducedMotion, usePrefersReducedTransparancy, useScript, useStorage, useSvgFavicon, useThrottle, useViewportSize, useVisibilityChange, useWindowScroll };

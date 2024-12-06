@@ -12,6 +12,7 @@ export { useEventListener } from "@/hooks/use-event-listener";
 export { CookieStorage } from "@/storage/cookie";
 
 export { useDocumentTitle } from "@/hooks/use-document-title";
+export { useHtmlLang } from "@/hooks/use-html-lang";
 export { useIcoFavicon } from "@/hooks/use-ico-favicon";
 export { useSvgFavicon } from "@/hooks/use-svg-favicon";
 export { useAppleTouchFavicon } from "@/hooks/use-apple-touch-favicon";

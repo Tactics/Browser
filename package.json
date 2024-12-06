@@ -1,6 +1,6 @@
 {
   "name": "@tactics/browser",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Utilities to help ease use of the web browser in javascript",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
